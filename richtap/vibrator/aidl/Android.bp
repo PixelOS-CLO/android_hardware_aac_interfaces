@@ -1,0 +1,32 @@
+//
+// SPDX-FileCopyrightText: The PixelOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+aidl_interface {
+    name: "vendor.aac.hardware.richtap.vibrator",
+    vendor_available: true,
+    srcs: ["vendor/aac/hardware/richtap/vibrator/*.aidl"],
+    stability: "vintf",
+    owner: "aac",
+
+    backend: {
+        cpp: {
+            enabled: false,
+        },
+        java: {
+            platform_apis: true,
+        },
+    },
+    versions_with_info: [
+        {
+            version: "1",
+            imports: [],
+        },
+        {
+            version: "2",
+            imports: [],
+        },
+    ],
+    frozen: true,
+}
